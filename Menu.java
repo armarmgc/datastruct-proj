@@ -37,7 +37,7 @@ public class Menu {
 
             if (selection == 0xf) {
                 System.out.println(help);
-            } else if (selection < opts.size()) {
+            } else if (selection < opts.size() && selection >= 0) {
                 opts.get(selection).run();
             } else {
                 System.out.println("Invalid option");
