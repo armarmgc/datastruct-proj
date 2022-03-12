@@ -3,7 +3,7 @@
 # Tech Talk Notes
 
 <details>
-<summary><b>&#x26db;Tech Talk 0 - Data Structures</b></summary>
+<summary><b>&#x26db; Tech Talk 0 - Data Structures</b></summary>
 
 <pre>
 Data Structure - anything that holds data (variable, class)
