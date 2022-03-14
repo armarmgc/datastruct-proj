@@ -2,8 +2,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        // Create nwe option list
         ArrayList<Option> options = new ArrayList<Option>();
 
+        // Add test print
         options.add(
                 new Option("Test print",
                     new Option.ExecClass() {
@@ -11,6 +13,7 @@ public class Main {
                             System.out.println("test");
                         }}));
 
+        // Add low to high order
         options.add(
                 new Option("Low to high order",
                     new Option.ExecClass() {
@@ -18,6 +21,7 @@ public class Main {
                             IntByReference.test();
                         }}));
 
+        // Add reverse matrix
         options.add(
                 new Option("Reverse Matrix",
                     new Option.ExecClass() {
@@ -25,6 +29,7 @@ public class Main {
                             Matrix.test();
                         }}));
 
+        // Start menu in a loop
         Menu.menu(options);
     }
 }
