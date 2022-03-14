@@ -1,6 +1,6 @@
 <br>
 
-# Tech Talk Notes
+# Tech Talk Notes (Click for dropdown)
 
 <details>
 <summary><b>&#x26db; Tech Talk 0 - Data Structures</b></summary>
