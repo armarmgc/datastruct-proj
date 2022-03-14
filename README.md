@@ -36,6 +36,8 @@ Data Structure Project
 - <a href="https://replit.com/@armarmgc/datastruct-proj">Repl</a>
 </pre>
 
+<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj?embed=true?lite=true"></iframe>
+
 <br>
 
 ---
