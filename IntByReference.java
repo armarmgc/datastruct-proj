@@ -1,3 +1,5 @@
+// Class that stores an int with functionality to swap if this instance is a
+// lower value
 public class IntByReference {
     // Stored value
     private int val;
@@ -33,19 +35,24 @@ public class IntByReference {
         }
     }
 
+    // Swap demonstration function
     public static void swapper(int x, int y) {
         IntByReference a = new IntByReference(x);
         IntByReference b = new IntByReference(y);
 
+        // Print values before
         System.out.println("Before: " + a + " " + b);
 
+        // Do swap
         a.swapToLowHighOrder(b);
 
+        // Print values after
         System.out.println("After: " + a + " " + b);
 
         System.out.print("\n");
     }
 
+    // Test function
     public static void test() {
         IntByReference.swapper(21, 16);
         IntByReference.swapper(16, 21);
