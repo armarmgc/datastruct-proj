@@ -30,6 +30,8 @@ I plan to take practice tests, while also training my programming skills by work
 
 # Data Structures Work
 
+[Issue](https://github.com/armarmgc/group-m/issues/1)
+
 <pre>
 Data Structure Project
 - <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
