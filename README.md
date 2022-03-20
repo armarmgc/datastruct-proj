@@ -1,6 +1,6 @@
 <br>
 
-# Tech Talk Notes
+# Tech Talk Notes (Click for dropdown)
 
 <details>
 <summary><b>&#x26db; Tech Talk 0 - Data Structures</b></summary>
@@ -30,11 +30,15 @@ I plan to take practice tests, while also training my programming skills by work
 
 # Data Structures Work
 
+[Review Ticket](https://github.com/armarmgc/group-m/issues/1)
+
 <pre>
 Data Structure Project
 - <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
 - <a href="https://replit.com/@armarmgc/datastruct-proj">Repl</a>
 </pre>
+
+<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj?embed=true?lite=true"></iframe>
 
 <br>
 
