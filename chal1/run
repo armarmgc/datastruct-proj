@@ -1,0 +1,2 @@
+javac Queue.java Node.java
+java Queue
