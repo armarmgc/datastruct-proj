@@ -40,6 +40,14 @@ Data Structure Project
 
 <iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj?embed=true?lite=true"></iframe>
 
+<pre>
+Data Structure Challenge 1
+- <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
+- <a href="https://replit.com/@armarmgc/datastruct-proj-1">Repl</a>
+</pre>
+
+<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj-1?embed=true?lite=true"></iframe>
+
 <br>
 
 ---
