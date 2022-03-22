@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 <br>
 
 # Tech Talk Notes (Click for dropdown)
