@@ -1,3 +1,5 @@
 remote_theme: pages-themes/minimal@v0.2.0
 title: Data Structure Project Page
 description: This is a page for my data structure project for CSA
+plugins:
+- jekyll-remote-theme
