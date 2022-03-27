@@ -1,10 +1,8 @@
 ---
-layout: none
-title: Datastructure Page
+layout: home
+title: Home
 permalink: /
 ---
-
-{% include navigation.html %}
 
 <br>
 
