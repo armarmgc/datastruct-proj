@@ -36,8 +36,8 @@ public class Rng {
 		long sum = 0;
 
 		try {
-			FileWriter f1 = new FileWriter("stats/xorshift");
-			FileWriter f2 = new FileWriter("stats/java_rand");
+			FileWriter f1 = new FileWriter("stats/rng/xorshift");
+			FileWriter f2 = new FileWriter("stats/rng/java_rand");
 
 			f1.write("");
 			f2.write("");
