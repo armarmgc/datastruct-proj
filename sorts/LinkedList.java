@@ -402,7 +402,8 @@ public class LinkedList {
 		double max_time = Long.MIN_VALUE;
 
 		String name = "";
-		String stats = "";
+		String stats_cycles = "";
+		String stats_time = "";
 
 		final LinkedList list = new LinkedList();
 
@@ -451,7 +452,8 @@ public class LinkedList {
 			cycles += cur_cycles;
 			time += cur_time;
 
-			stats = stats.concat(String.format("%d %d\n", items, cur_cycles));
+			stats_cycles = stats_cycles.concat(String.format("%d %d\n", items, cur_cycles));
+			stats_time = stats_time.concat(String.format("%d %f\n", items, cur_time));
 
 			if (cur_cycles < min_cycles) {
 				min_cycles = cur_cycles;
@@ -490,11 +492,17 @@ public class LinkedList {
 
 		try {
 			// Append the statistics to a file
-			FileWriter fwriter = new FileWriter(String.format("stats/%s.dat", name), true);
-			fwriter.write(stats, 0, stats.length());
-			fwriter.flush();
+			FileWriter file_cycles = new FileWriter(String.format("stats/cycles/%s.dat", name), true);
+			FileWriter file_time = new FileWriter(String.format("stats/time/%s.dat", name), true);
 
-			fwriter.close();
+			file_cycles.write(stats_cycles, 0, stats_cycles.length());
+			file_time.write(stats_time, 0, stats_time.length());
+
+			file_cycles.flush();
+			file_time.flush();
+
+			file_cycles.close();
+			file_time.close();
 		} catch (Exception e) {
 			System.out.println(String.format("IO error: %s", e));
 		}
