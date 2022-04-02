@@ -508,12 +508,25 @@ public class LinkedList {
 		System.out.println();
 	}
 
-	public static void main(String[] args) {
+	public static void standard_test() {
 		int count = 0xf;
 
-		run_tests(count, 10);
+		run_tests(count, 100);
 		run_tests(count, 2500);
 		run_tests(count, 5000);
+	}
+
+	public static void graph_test() {
+		int count = 0xf;
+		int items = 5000;
+
+		for (int i = 1; i <= items; i += 10) {
+			run_tests(count, i);
+		}
+	}
+
+	public static void main(String[] args) {
+		standard_test();
 	}
 }
 
