@@ -392,9 +392,15 @@ public class LinkedList {
 	// list with `items` number of items and `count` times
 	public static void test(Sort sort, long count, long items) {
 		long cycles = 0;
+
+		long min_cycles = Long.MAX_VALUE;
+		long max_cycles = Long.MIN_VALUE;
+
 		double time = 0;
-		long min = Long.MAX_VALUE;
-		long max = Long.MIN_VALUE;
+
+		double min_time = Long.MAX_VALUE;
+		double max_time = Long.MIN_VALUE;
+
 		String name = "";
 		String stats = "";
 
@@ -441,17 +447,26 @@ public class LinkedList {
 			fn.run();
 
 			long cur_cycles = rdtsc() - start;
+			double cur_time = ((double) Instant.now().toEpochMilli() - time_start) / 1000000;
 			cycles += cur_cycles;
+			time += cur_time;
 
 			stats = stats.concat(String.format("%d %d\n", items, cur_cycles));
-			time += ((double) Instant.now().toEpochMilli() - time_start) / 1000000;
 
-			if (cur_cycles < min) {
-				min = cur_cycles;
+			if (cur_cycles < min_cycles) {
+				min_cycles = cur_cycles;
 			}
 
-			if (cur_cycles > max) {
-				max = cur_cycles;
+			if (cur_cycles > max_cycles) {
+				max_cycles = cur_cycles;
+			}
+	
+			if (cur_time < min_time) {
+				min_time = cur_time;
+			}
+
+			if (cur_time > max_time) {
+				max_time = cur_time;
 			}
 	
 			// Check if the list is sorted
@@ -471,7 +486,7 @@ public class LinkedList {
 		}
 
 		// Print statistics for the test
-		System.out.println(String.format("[ %-6s %d items ] [ %f ms | cycles %9d | min %9d | max %9d ]", name, items, time / count, cycles / count, min, max));
+		System.out.println(String.format("[ %-6s %6d items ] [ %f ms | cycles %9d | min/max time %f / %f | min/max cycles %9d / %9d ]", name, items, time / count, cycles / count, min_time, max_time, min_cycles, max_cycles));
 
 		try {
 			// Append the statistics to a file
