@@ -382,7 +382,7 @@ public class LinkedList {
 	}
 
 	// Get number of cycles
-	private static native long rdtsc();
+	public static native long rdtsc();
 
 	static {
 		System.loadLibrary("rdtsc");
