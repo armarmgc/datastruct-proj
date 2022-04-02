@@ -464,16 +464,20 @@ public class LinkedList {
 		}
 	}
 
+	public static void run_tests(count, items) {
+		test(Sort.BUBBLE, count, items);
+		test(Sort.SELECT, count, items);
+		test(Sort.INSERT, count, items);
+		test(Sort.MERGE, count, items);
+		System.out.println();
+	}
+
 	public static void main(String[] args) {
 		long count = 0xf;
-		long items = 5000;
 
-		for (int i = 199; i < items; i += 200) {
-			test(Sort.BUBBLE, count, i);
-			test(Sort.SELECT, count, i);
-			test(Sort.INSERT, count, i);
-			test(Sort.MERGE, count, i);
-		}
+		run_tests(count, 10);
+		run_tests(count, 2500);
+		run_tests(count, 5000);
 	}
 }
 
