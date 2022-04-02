@@ -464,7 +464,7 @@ public class LinkedList {
 		}
 	}
 
-	public static void run_tests(count, items) {
+	public static void run_tests(int count, int items) {
 		test(Sort.BUBBLE, count, items);
 		test(Sort.SELECT, count, items);
 		test(Sort.INSERT, count, items);
@@ -473,7 +473,7 @@ public class LinkedList {
 	}
 
 	public static void main(String[] args) {
-		long count = 0xf;
+		int count = 0xf;
 
 		run_tests(count, 10);
 		run_tests(count, 2500);
