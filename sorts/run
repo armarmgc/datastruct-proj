@@ -1,0 +1,7 @@
+javac LinkedList.java Node.java Rng.java Sort.java
+if [ $? -ne 0 ]; then exit 1; fi
+rm stats/*
+javac -h . LinkedList.java
+gcc -I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux rdtsc.c -shared -o lib/librdtsc.so
+x86_64-w64-mingw32-gcc -I/mnt/c/Program\ Files/Java/jdk-17.0.1/include -I/mnt/c/Program\ Files/Java/jdk-17.0.1/include/win32 rdtsc.c -shared -o lib/rdtsc.dll
+java -Djava.library.path=lib/ LinkedList
