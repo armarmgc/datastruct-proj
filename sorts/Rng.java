@@ -11,7 +11,7 @@ public class Rng {
 		this.seed = seed;
 	}
 
-	// XOR shift
+	// xorshift
 	public int rand_int() {
 		seed ^= seed << 13;
 		seed ^= seed >> 17;
