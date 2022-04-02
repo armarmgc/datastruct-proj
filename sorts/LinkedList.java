@@ -19,6 +19,7 @@ public class LinkedList {
 	// Deep copy
 	public LinkedList clone() {
 		LinkedList list = new LinkedList();
+
 		Node node = head;
 
 		while (node != null) {
@@ -39,6 +40,7 @@ public class LinkedList {
 
 			node = node.next;
 		}
+
 		list.len = len;
 
 		return list;
@@ -116,6 +118,7 @@ public class LinkedList {
 	// Add node to end
 	public void add(Node node) {
 		len++;
+
 		if (head != null && tail != null) {
 			tail.next = node;
 			node.prev = tail;
@@ -142,9 +145,11 @@ public class LinkedList {
 		Node after = null;
 
 		cur = before.next;
+
 		if (cur == null) {
 			throw new IndexOutOfBoundsException();
 		}
+
 		after = cur.next;
 		before.next = after;
 		len--;
@@ -191,6 +196,7 @@ public class LinkedList {
 			n1.prev = n2.prev;
 			n1.prev.next = n1;
 		}
+
 		n1.next = n2;
 		n2.prev = n1;
 	}
@@ -198,6 +204,7 @@ public class LinkedList {
 	// Swap nodes at specified indices
 	public void swap(int idx1, int idx2) throws IndexOutOfBoundsException {
 		int tmp = get(idx1);
+
 		set(idx1, get(idx2));
 		set(idx2, tmp);
 	}
@@ -205,6 +212,7 @@ public class LinkedList {
 	// Swap the specified nodes
 	public void swapNode(Node node, Node other) {
 		int tmp = node.val;
+
 		node.val = other.val;
 		other.val = tmp;
 	}
@@ -218,6 +226,7 @@ public class LinkedList {
 
 	public void bubbleSort() {
 		boolean ordered;
+
 		do {
 			Node node = head;
 			ordered = true;
@@ -233,6 +242,7 @@ public class LinkedList {
 
 	public void selectSort() {
 		Node node = head;
+
 		for (int s = 0; node != null; s++) {
 			int min = node.val;
 			int idx = s;
@@ -261,6 +271,7 @@ public class LinkedList {
 		}
 
 		Node node = head.next;
+
 		while (node != null) {
 			Node n = node;
 
@@ -297,6 +308,7 @@ public class LinkedList {
 		int mid = n / 2;
 		int len1 = mid;
 		int len2 = n - mid;
+
 		b = a.clone();
 		LinkedList l = b.sublist(0, len1);
 		LinkedList r = b.sublist(mid, mid + len2);
@@ -307,9 +319,11 @@ public class LinkedList {
 		merge(a, l, r, n);
 	}
 
+	// Perform sorted merge on sorted lists `l` and `r`
 	public void merge(LinkedList a, LinkedList l, LinkedList r, int n) {
 		int j = 0;
 		int k = 0;
+
 		for (int i = 0; i < n; i++) {
 			if (j < n / 2 && (k >= n - n / 2 || l.get(j) <= r.get(k))) {
 				a.set(i, l.get(j));
@@ -325,6 +339,7 @@ public class LinkedList {
 	public static void check(LinkedList list) {
 		Node node = list.head;
 		int x = 0;
+
 		while (node != null) {
 			if (node != list.head && node.prev == null) {
 				System.out.println(String.format("Node prev is null, idx %d, len %d", x, list.len));
@@ -342,14 +357,13 @@ public class LinkedList {
 
 	public String toString() {
 		String s = "";
-
 		if (head == null) {
 			return s;
 		}
 
 		Node node = head;
-
 		int x = 0;
+
 		while (node != null) {
 			s = s.concat(Integer.toString(node.val) + "\n");
 
@@ -388,6 +402,7 @@ public class LinkedList {
 
 		// Set function to run and name of the sort by the specified enum
 		Runnable fn;
+
 		switch (sort) {
 			case BUBBLE:
 				name = "Bubble";
@@ -414,6 +429,7 @@ public class LinkedList {
 		for (int c = 0; c < count; c++) {
 			// Generate random numbers
 			Rng rng = new Rng();
+
 			for (int a = 0; a < items; a++) {
 				list.add(rng.rand_int());
 			}
@@ -421,9 +437,12 @@ public class LinkedList {
 			// Count time and cycles spent on sorting
 			double time_start = Instant.now().toEpochMilli();
 			long start = rdtsc();
+
 			fn.run();
+
 			long cur_cycles = rdtsc() - start;
 			cycles += cur_cycles;
+
 			stats = stats.concat(String.format("%d %d\n", items, cur_cycles));
 			time += ((double) Instant.now().toEpochMilli() - time_start) / 1000000;
 
@@ -437,6 +456,7 @@ public class LinkedList {
 	
 			// Check if the list is sorted
 			Node node = list.head;
+
 			while (node != list.tail && node.next != null) {
 				if (node.val > node.next.val) {
 					System.out.println(list);
@@ -458,6 +478,7 @@ public class LinkedList {
 			FileWriter fwriter = new FileWriter(String.format("stats/%s.dat", name), true);
 			fwriter.write(stats, 0, stats.length());
 			fwriter.flush();
+
 			fwriter.close();
 		} catch (Exception e) {
 			System.out.println(String.format("IO error: %s", e));
