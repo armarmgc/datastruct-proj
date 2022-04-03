@@ -10,7 +10,7 @@ permalink: /
 
 <pre>
 - <a href="https://github.com/armarmgc/group-m/issues/11">Review Ticket</a>
-- <a href="/analysis/sorts">Analysis</a>
+- <a href="/datastruct-proj/analysis/sorts">Analysis</a>
 - <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
 <details>
 <summary> Repl - <a href="https://replit.com/@armarmgc/datastruct-proj-3">Repl</a></summary>
@@ -28,7 +28,7 @@ permalink: /
 ### <u>Data Structure Challenge 2</u>
 
 <pre>
-- <a href="/analysis/chal2">Analysis</a>
+- <a href="/datastruct-proj/analysis/chal2">Analysis</a>
 - <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
 <details>
 <summary>Repl - <a href="https://replit.com/@armarmgc/datastruct-proj-2">Repl</a></summary>
