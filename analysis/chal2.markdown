@@ -1,7 +1,7 @@
 ---
-layout: home
+layout: page
 title: Challenge 2 Learnings
-permalink: /learnings/chal2
+permalink: /analysis/chal2
 ---
 
 # Table of Contents
