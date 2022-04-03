@@ -4,79 +4,81 @@ title: Home
 permalink: /
 ---
 
-<br>
+## Data Structures Project
 
-# Tech Talk Notes
+### <u>Sorts and Analysis</u>
 
+<pre>
+- <a href="https://github.com/armarmgc/group-m/issues/11">Review Ticket</a>
+- <a href="/analysis/sorts">Analysis</a>
+- <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
 <details>
-<summary><b>Tech Talk 0 - Data Structures</b></summary>
+<summary> Repl - <a href="https://replit.com/@armarmgc/datastruct-proj-3">Repl</a></summary>
 
-<pre>
-Data Structure - anything that holds data (variable, class)
-Algorithm      - a set of operations on a data structure
-
-Programming Paradigms
-- Imperative - Uses statements to make up a program (describes specifics)
-    - Procedural - Uses functions to make up a program
-    - Object Oriented - Uses objects (classes) to structure a program
-</pre>
-
+<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj-3?embed=true?lite=true"></iframe>
 </details>
+</pre>
 
 <br>
 
 ---
 
-# Test Prep Plans
-I plan to take practice tests, while also training my programming skills by working on PBL features.
-
 <br>
 
----
-
-# Data Structures Work
-
-[Review Ticket](https://github.com/armarmgc/group-m/issues/1)
+### <u>Data Structure Challenge 2</u>
 
 <pre>
-Data Structure Project
+- <a href="/analysis/chal2">Analysis</a>
 - <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
-- <a href="https://replit.com/@armarmgc/datastruct-proj">Repl</a>
-</pre>
-
-<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj?embed=true?lite=true"></iframe>
-
----
-
-<pre>
-Data Structure Challenge 1
-- <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
-- <a href="https://replit.com/@armarmgc/datastruct-proj-1">Repl</a>
-</pre>
-
-<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj-1?embed=true?lite=true"></iframe>
-
-<br>
-
----
-
-<pre>
-Data Structure Challenge 2
-- <a href="/learnings/chal2">Key Learnings</a>
-- <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
-- <a href="https://replit.com/@armarmgc/datastruct-proj-2">Repl</a>
-</pre>
+<details>
+<summary>Repl - <a href="https://replit.com/@armarmgc/datastruct-proj-2">Repl</a></summary>
 
 <iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj-2?embed=true?lite=true"></iframe>
+</details>
+</pre>
 
-<br>
-
-## Commits
-[Link](https://github.com/armarmgc/group-m/commits?author=armarmgc)
 
 <br>
 
 ---
 
+<br>
 
+### <u>Data Structure Challenge 1</u>
+
+<pre>
+- <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
+<details>
+<summary>Repl - <a href="https://replit.com/@armarmgc/datastruct-proj-1">Link</a></summary>
+
+<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj-1?embed=true?lite=true"></iframe>
+</details>
+</pre>
+
+
+<br>
+
+---
+
+<br>
+
+### <u>Data Structure Start</u>
+
+<pre>
+- <a href="https://github.com/armarmgc/datastruct-proj/commits/master">Commits</a>
+<details>
+<summary>Repl - <a href="https://replit.com/@armarmgc/datastruct-proj">Repl</a></summary>
+
+<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@armarmgc/datastruct-proj?embed=true?lite=true"></iframe>
+</details>
+</pre>
+
+<br>
+
+---
+
+<br>
+
+### Commits
+[Link](https://github.com/armarmgc/group-m/commits?author=armarmgc)
 
