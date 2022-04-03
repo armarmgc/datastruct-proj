@@ -172,7 +172,7 @@ Xorshift is averages around about 30 cycles, and java `Random` about 40 cycles.
 
 The graph shows that xorshift is about 30% faster.
 
-![Graph comparing xorshift and java Random](/assets/images/xorshift_vs_javarand.png)
+![Graph comparing xorshift and java Random](/datastruct-proj/assets/images/xorshift_vs_javarand.png)
 
 ## Measuring clock cycles
 The measurements not only include time, but also include clock cycles.
@@ -259,13 +259,13 @@ Orange - Merge
 - clock cycles
 
 
-![Compare clock cycles of sorts](/assets/images/compare_sorts_cycles.png)
+![Compare clock cycles of sorts](/datastruct-proj/assets/images/compare_sorts_cycles.png)
 
 
 - time
 
 
-![Compare clock cycles of sorts](/assets/images/compare_sorts_time.png)
+![Compare clock cycles of sorts](/datastruct-proj/assets/images/compare_sorts_time.png)
 
 You can see that `merge` sort is the fastest and is very consistent in its time taken, as it has an O(n log(n)) time complexity in worst and best cases. The best and worst case time complexity being the same means that there will be a very low amount of variance.
 
