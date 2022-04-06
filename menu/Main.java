@@ -29,6 +29,11 @@ public class Main {
                             Matrix.test();
                         }}));
 
+        options.add(
+                new Option("Gravity Calculate",
+                        new Option.ExecClass() {
+                            public void run() { Gravity.test(); }}));
+
         // Start menu in a loop
         Menu.menu(options);
     }
