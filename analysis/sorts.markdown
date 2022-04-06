@@ -286,7 +286,7 @@ If the head of the list is closer, just traverse normally from the head.
 }
 ```
 
-This allows consecutive accesses of the entire list to be O(1), and since this type of access is the most common, it improves the main disadvantage of a linked list of slow query times that are typically O(n).
+This allows consecutive accesses of the entire list to be `O(1)`, and since this type of access is the most common, it improves the main disadvantage of a linked list of slow query times that are typically `O(n)`.
 
 # Conclusions
 The following graphs shows the number of clock cycles and time that each sort use.
@@ -310,10 +310,10 @@ Orange - Merge
 
 ![Compare clock cycles of sorts](/datastruct-proj/assets/images/compare_sorts_time.png)
 
-You can see that `merge` sort is the fastest and is very consistent in its time taken, as it has an O(n log(n)) time complexity in worst and best cases. The best and worst case time complexity being the same means that there will be a very low amount of variance.
+You can see that `merge` sort is the fastest and is very consistent in its time taken, as it has an `O(n log(n))` time complexity in worst and best cases. The best and worst case time complexity being the same means that there will be a very low amount of variance.
 
 
-In contrast `bubble`, `select`, and `insert` sorts increase exponentially, as their worst and average cases are O(n^2). `Select` sort has a best case of O(n^2), while `bubble` and `insert` sort has a worse case of O(n), so `bubble` and `insert` sort increase at a slower rate.
+In contrast `bubble`, `select`, and `insert` sorts increase exponentially, as their worst and average cases are `O(n^2)`. `Select` sort has a best case of `O(n^2)`, while `bubble` and `insert` sort has a worse case of `O(n)`, so `bubble` and `insert` sort increase at a slower rate.
 
 Order of efficiency:
 1. Merge
