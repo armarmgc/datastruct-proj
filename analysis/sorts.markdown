@@ -177,12 +177,55 @@ The graph shows that xorshift is about 30% faster.
 ## Measuring clock cycles
 The measurements not only include time, but also include clock cycles.
 
+This is because clock cycles are a measure of performance that is consistent between machines.
+
+### Processor clock overview
 The clock is a circuit inside the processor that oscillates from on and off states.
+
 The clock synchronizes the operations that the processor runs, so operations start when the clock changes state.
 
 This means the higher the clock frequency, the more instructions will be executed, although the instructions per clock cycle will remain a similar amount.
 
-This means that the number of clock cycles needed to run a program should remain nearly the same, even if the processor runs at a faster clock rate, allowing for consistency between different machines.
+Even if the processor runs at a faster clock rate, the number of clock cycles needed to run a program should remain nearly the same.
+This allows for consistency between different machines.
+
+### Importing a C function into Java with JNI
+Since java doesn't have a method to measure clock cycles, this project imports a function from C called `rdtsc`. This function gets the current number of clock cycles since the system's last reset.
+
+A Java Native Interface (JNI) header file must be created for the importing class for native methods.
+
+The C code can then be compiled as a [shared library][] (linux) or [dll][] (windows) with specific naming: `librdtsc.so` for linux and `rdtsc.dll` for windows.
+
+[shared library]: https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
+[dll]: https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
+
+I won't go in depth on this subject as it is a bit off topic, but the source is on [github][] with the `run` file having the commands used to compile the libraries and header files.
+
+[github]: https://github.com/armarmgc/datastruct-proj/tree/master/sorts
+
+### Native methods in Java
+To import the function from C, we have to first declare a native method. The native keyword is used to specify a method that is imported form another language.
+
+Then, we use `System.loadLibrary` to load the method from a library file.
+
+```java
+// Get number of cycles
+public static native long rdtsc();
+
+static {
+    System.loadLibrary("rdtsc");
+}
+```
+
+Now we can use this function to get the elapsed number of cycles for the sort.
+
+```java
+long start = rdtsc();
+
+fn.run();
+
+long cur_cycles = rdtsc() - start;
+```
 
 ## Caching previous node
 My linked list implementation caches the previous node in order to speed up queries that are close to each other.
@@ -270,7 +313,7 @@ Orange - Merge
 You can see that `merge` sort is the fastest and is very consistent in its time taken, as it has an O(n log(n)) time complexity in worst and best cases. The best and worst case time complexity being the same means that there will be a very low amount of variance.
 
 
-In contrast `bubble`, `select`, and `insert` sorts increase exponentially, as their worst and average cases are `n^2`. `Select` sort has a best case of `n^2`, while `bubble` and `insert` sort has a worse case of `n`, so `bubble` and `insert` sort increase at a slower rate.
+In contrast `bubble`, `select`, and `insert` sorts increase exponentially, as their worst and average cases are O(n^2). `Select` sort has a best case of O(n^2), while `bubble` and `insert` sort has a worse case of O(n), so `bubble` and `insert` sort increase at a slower rate.
 
 Order of efficiency:
 1. Merge
