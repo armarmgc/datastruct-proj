@@ -13,8 +13,8 @@ public class Gravity {
     public double calculate() {
         double mass = getMass() * Math.pow(10, 24);
         double earthMass = 5.97 * Math.pow(10, 24);
-        double distance = getDistance() * 1.496;
-        return result = (6.674) * mass * earthMass / Math.pow(distance, 2);
+        double distance = getDistance() * Math.pow(10, 11) * 1.496;
+        return result = (6.674) * Math.pow(10, -11) * mass * earthMass / Math.pow(distance, 2);
     }
 
     public double getDistance() {
@@ -39,7 +39,7 @@ public class Gravity {
         if (planet.equals("Neptune")) {
             return 29.09;
         }
-        if (planet.equals("Pluto")) {
+        else {
             return 38.5;
         }
     }
@@ -66,7 +66,7 @@ public class Gravity {
         if (planet.equals("Neptune")) {
             return 102.0;
         }
-        if (planet.equals("Pluto")) {
+        else {
             return 0.013;
         }
     }
