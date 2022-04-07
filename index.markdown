@@ -6,6 +6,36 @@ permalink: /
 
 ## Data Structures Project
 
+### <u>Individual Data Structures Final</u>
+
+<pre>
+- <a href="/datastruct-proj/analysis/clock">Review Ticket</a>
+</pre>
+
+<br>
+
+---
+
+<br>
+
+### <u>Crossover Contribution</u>
+
+<pre>
+- <a href="/datastruct-proj/analysis/clock">Analysis</a>
+- <a href="https://github.com/chenxin-chex/Chenxin-Individual-Tri-3/pull/1">Pull Request</a>
+<details>
+<summary> Repl - <a href="https://replit.com/@chenxinNi/Chenxin-Individual-Tri-3">Repl</a></summary>
+
+<iframe class="rounded-corners" frameborder="0" width="100%" height="500px" src="https://replit.com/@chenxinNi/Chenxin-Individual-Tri-3?embed=true?lite=true"></iframe>
+</details>
+</pre>
+
+<br>
+
+---
+
+<br>
+
 ### <u>Sorts and Analysis</u>
 
 <pre>
