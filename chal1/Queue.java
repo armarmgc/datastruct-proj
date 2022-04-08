@@ -154,7 +154,7 @@ public class Queue {
 	
 	// Chal2 runner
 	public static void chal2() {
-		ps("\n-Challenge 2-\n");
+		ps("-Challenge 2-\n");
 
 		// Static data for 2 lists
 		int[] s1 = new int[] {1, 4, 5, 8};
@@ -181,11 +181,13 @@ public class Queue {
 		// Merge lists
 		ps("Merged | ");
 		pq(q.merge(q1));
+
+        ps("\n");
 	}
 	
 	// Chal3 runner
 	public static void chal3() {
-		ps("\n-Challenge 3-\n");
+		ps("-Challenge 3-\n");
 
 		// Static data for inputs
 		int[] inps = new int[] {1, 2, 3};
