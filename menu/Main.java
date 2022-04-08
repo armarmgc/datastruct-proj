@@ -29,6 +29,7 @@ public class Main {
                             Matrix.test();
                         }}));
 
+        // Add gravity calculation for planets
         options.add(
                 new Option("Gravity Calculate",
                         new Option.ExecClass() {

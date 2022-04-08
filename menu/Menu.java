@@ -84,6 +84,11 @@ public class Menu {
                             Matrix.test();
                         }}));
 
+        options.add(
+                new Option("Gravity Calculate",
+                        new Option.ExecClass() {
+                            public void run() { Gravity.test(); }}));
+
         menu(options);
     }
 
