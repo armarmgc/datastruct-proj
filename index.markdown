@@ -9,7 +9,7 @@ permalink: /
 ### <u>Individual Data Structures Final</u>
 
 <pre>
-- <a href="/datastruct-proj/analysis/clock">Review Ticket</a>
+- <a href="https://github.com/armarmgc/group-m/issues/12">Review Ticket</a>
 </pre>
 
 <br>
