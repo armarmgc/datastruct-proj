@@ -10,6 +10,7 @@ permalink: /
 
 <pre>
 - <a href="https://github.com/armarmgc/group-m/issues/12">Review Ticket</a>
+- <a href="https://drive.google.com/file/d/11w4VSRGeRyY6WqtCcvr-eIL8pQS5UzAm/view?usp=sharing">Video</a>
 </pre>
 
 <br>
