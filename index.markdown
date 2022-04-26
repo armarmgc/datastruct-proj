@@ -9,7 +9,8 @@ permalink: /
 ### <u>AP Test Prep</u>
 
 <pre>
-- <a href="/datastruct-proj/ap/mcq">MC Corrections</a>
+- <a href="/datastruct-proj/ap/mcq2">MCQ 2 Corrections</a>
+- <a href="/datastruct-proj/ap/mcq1">MCQ 1 Corrections</a>
 </pre>
 
 <br>
