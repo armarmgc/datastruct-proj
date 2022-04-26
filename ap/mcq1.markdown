@@ -1,7 +1,7 @@
 ---
 layout: page
-title: MC Corrections
-permalink: /ap/mcq
+title: Practice MCQ 1 Corrections
+permalink: /ap/mcq1
 ---
 
 # Table of Contents
@@ -25,9 +25,9 @@ permalink: /ap/mcq
 Which of the following always evaluates to the same value as the expression above?
 
 ```
-A) x      (Correct answer)
+A) x      (Correct Answer)
 B) y
-C) x && y (Wrong answer)
+C) x && y (Wrong Answer)
 D) x || y
 ```
 
@@ -56,8 +56,8 @@ Assume that numbers has been initialized with the following values.
 Which of the following represents the order of the values in numbers as a result of the call mystery(3)?
 
 ```
-A) {17, 20, 21, 42, 45, 69, 48, 51, 39} (Correct answer)
-B) {17, 20, 23, 26, 29, 32, 35, 38, 41} (Wrong answer)
+A) {17, 20, 21, 42, 45, 69, 48, 51, 39} (Correct Answer)
+B) {17, 20, 23, 26, 29, 32, 35, 38, 41} (Wrong Answer)
 C) {17, 37, 21, 42, 18, 69, 48, 28, 39}
 D) {20, 23, 21, 42, 45, 69, 51, 54, 39}
 E) {20, 34, 21, 45, 15, 69, 51, 25, 39} 
@@ -93,7 +93,7 @@ Which of the following best describes what is returned by the calculate method?
 ```
 A) The largest value in the two-dimensional array
 B) The smallest value in the two-dimensional array
-C) The row index of an element with the largest value in the two-dimensional array (Wrong answer)
+C) The row index of an element with the largest value in the two-dimensional array (Wrong Answer)
 D) The row index of an element with the smallest value in the two-dimensional array
 E) The column index of an element with the largest value in the two-dimensional array (Correct Answer)
 ```
