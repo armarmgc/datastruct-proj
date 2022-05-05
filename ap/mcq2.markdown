@@ -5,11 +5,17 @@ permalink: /ap/mcq2
 ---
 
 # Table of Contents
+- [MCQ Score](#mcq-score)
 - [Q4 print X Y Z](#q4-print-x-y-z)
 - [Q7 if and compound boolean equivalence](#q7-if-and-compound-boolean-equivalence)
 - [Q11 code to print 987654321](#q11-code-to-print-987654321)
 - [Q31 count negative values](#q31-count-negative-values)
 - [Q33 array with A through L](#q33-array-with-a-through-l)
+
+## MCQ Score
+
+Score: 35/40
+![MCQ Score 35/40](/datastruct-proj/assets/images/mcq_2_score.png)
 
 ## Q4 print X Y Z
 
