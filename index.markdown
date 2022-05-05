@@ -6,9 +6,16 @@ permalink: /
 
 ## Data Structures Project
 
+### Study Week 2
+
+<pre>
+- <a href="https://github.com/armarmgc/group-m/issues/15">Review Ticket</a>
+</pre>
+
 ### <u>AP Test Prep</u>
 
 <pre>
+- <a href="/datastruct-proj/ap/frq2">FRQ 2</a>
 - <a href="/datastruct-proj/ap/mcq2">MCQ 2 Corrections</a>
 - <a href="/datastruct-proj/ap/mcq1">MCQ 1 Corrections</a>
 </pre>
